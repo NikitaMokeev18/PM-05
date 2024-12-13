@@ -1,0 +1,91 @@
+nav a{/*стиль меню */
+font-size: 20px;
+font-weight: bold;
+text-decoration:none;
+color: rgb(117, 18, 48);
+}
+footer{
+    font-style: italic;
+}
+p1{/*подпись с низу в странице о компании*/
+    font-style: italic;
+}
+a{/*ссылки на страницы*/
+    color: black;
+    text-decoration:none;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+body{ 
+    background-color: burlywood;
+    background: radial-gradient( to top, #F6EFD2, #f79800);
+}
+table{ /*таблица общие настройки*/
+    background-color: rgb(196, 101, 101);
+    border-radius: 10px/10px
+}
+th{/*заголовки в таблицах*/
+    color: rgb(216, 198, 198);
+    font-size: 100%;
+    font-family: Arial, Verdana, sans-serif;
+}
+td{/*текст в таблицах*/
+color: rgb(255, 255, 255);
+font-size: 100%;
+font-family: Arial, Verdana, sans-serif;
+}
+h1,h2,h3,h4{ /*заголовки 1,2,3,4 типов*/
+    color: rgb(117, 18, 48);  
+  font-size: 200%;
+  font-family: Arial, Verdana, sans-serif;
+
+
+}
+p {/*обычный текст*/
+   color: black;
+   font-family: Arial, Verdana, sans-serif;
+}
+b{ /*стиль жирного начертания*/
+    color: rgb(90, 0, 0);
+    font-family: Arial, Verdana, sans-serif;
+}
+img{ /*рамка фоток*/
+    border: 3px dotted rgb(90, 0, 0);
+}
+button{ /*кнопка подтвердить заказ соответственно*/
+    width: 200px;
+    height: 50px;
+    background-color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, sans-serif;
+    font-size:100%;
+    border-radius: 20px/20px;
+    border: 2px;
+}
+input{ /* поля с вводом текста*/
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 10px/10px
+}
+textarea{  /*поле предложений*/
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif ;
+    border-radius: 10px/10px;
+    width: 300px;
+    height: 100px;
+}
+select{ /*выбор округа*/
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 10px/10px
+}
+.or{ /*таблица заказа*/
+    border-radius: 10px/10px;
+}
+.menu{
+    background-color:rgb(192, 192, 192);
+    border-color: rgb(90, 0, 0);
+}
+a[href^="https://"]/*индивидуальный цвет ссылки */
+{
+    color:  orangered;
+}
