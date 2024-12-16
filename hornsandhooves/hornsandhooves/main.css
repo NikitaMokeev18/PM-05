@@ -1,0 +1,126 @@
+nav{/*стиль меню */
+font-weight: bold;
+text-decoration:none;
+margin-top: 10px;
+width: 200px; 
+padding: 0 10px; 
+float: left;
+
+}
+footer{ 
+    font-style: italic;
+    background: #8fa09b; 
+    color: #fff; 
+    padding: 5px; 
+    clear: left; 
+
+}
+div {
+    width: 1000px;
+    margin: 0 auto; 
+    background: #f0f0f0; 
+    }
+header {
+    font-size: 2.2em; 
+    text-align: center; 
+    padding: 5px; 
+    background: #8fa09b; 
+    color: #ffe; 
+    }
+main {
+    margin-left: 200px; 
+    padding: 10px; 
+    background: #fff; 
+    position: static;
+    }
+p1{/*подпись с низу в странице о компании*/
+    font-style: italic;
+}
+a{/*ссылки на страницы*/
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 20px;
+    color: #666; 
+    background: #f0f0f0;
+    padding: 5px; 
+    transition: 0.5s;
+    
+}
+    a:hover {
+        color: #fff; 
+        background:#8fa09b; 
+        text-decoration:none;
+        border-radius: 10px/10px;
+       }
+body{ 
+    background-color: burlywood;
+}
+table{ /*таблица общие настройки*/
+    background-color:burlywood;
+    border-radius: 10px/10px
+}
+th{/*заголовки в таблицах*/
+    color: rgb(216, 198, 198);
+    font-size: 100%;
+    font-family: Arial, Verdana, sans-serif;
+}
+td{/*текст в таблицах*/
+color: rgb(255, 255, 255);
+font-size: 100%;
+font-family: Arial, Verdana, sans-serif;
+}
+h1,h2,h3,h4{ /*заголовки 1,2,3,4 типов*/
+color: rgb(117, 18, 48);  
+font-family: Arial, Verdana, sans-serif;
+font-size: 200%;
+}
+p {/*обычный текст*/
+   color: black;
+   font-family: Arial, Verdana, sans-serif;
+}
+b{ /*стиль жирного начертания*/
+    color: rgb(90, 0, 0);
+    font-family: Arial, Verdana, sans-serif;
+}
+img{ /*рамка фоток*/
+    border: 3px dotted rgb(90, 0, 0);
+}
+button{ /*кнопка подтвердить заказ соответственно*/
+    width: 200px;
+    height: 50px;
+    background-color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, sans-serif;
+    font-size:100%;
+    border-radius: 20px/20px;
+}
+input{ /* поля с вводом текста*/
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 10px/10px
+}
+input:focus, textarea:focus{
+background-color:  #8fa09b;
+}
+
+textarea{  /*поле предложений*/
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    border-radius: 10px/10px;
+    width: 300px;
+    height: 100px;
+}
+select{ /*выбор округа*/
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 10px/10px
+}
+.or{ /*таблица заказа*/
+    border-radius: 10px/10px;
+}
+a[href^="https://"]/*индивидуальный цвет ссылки */
+{
+    color:  orangered;
+}
+
+
+
+
