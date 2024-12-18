@@ -1,89 +1,267 @@
-nav{/*стиль меню */
-font-weight: bold;
-text-decoration:none;
+.menu {
+	/*стиль меню */
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 10px;
+	width: 280px;
+	padding: 0 10px;
+	float: left;
 }
-footer{
-    font-style: italic;
+.fb {
+	/*стиль второго меню*/
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	background: #8fa09b;
+	border: 1px solid black;
 }
-p1{/*подпись с низу в странице о компании*/
-    font-style: italic;
+footer {
+	font-style: italic;
+	background: #8fa09b;
+	color: #fff;
+	padding: 5px;
+	clear: left;
 }
-a{/*ссылки на страницы*/
-    color: rgb(117, 18, 48);
-    text-decoration:none;
-    font-family: Arial, Verdana, sans-serif;
-    font-size: 20px;
+.as{
+	width: 1000px;
+	margin: 0 auto;
+	background: #f0f0f0;
+}
+header {
+	font-size: 2.2em;
+	text-align: center;
+	padding: 5px;
+	background: #8fa09b;
+	color: #ffe;
+}
+main {
+	margin-left: 300px;
+	padding: 10px;
+	background: #fff;
+	position: static;
+	}
+.unit-c { /* контейнеры на странице наши сотрудники */
+	max-width: 650px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-body{ 
-    background-color: burlywood;
-    background: radial-gradient( to top, #F6EFD2, #f79800);
+.unit {
+	margin: 10px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
-table{ /*таблица общие настройки*/
-    background-color: rgb(196, 101, 101);
-    border-radius: 10px/10px
+.unit img{
+	border-radius: 20%;
+	box-shadow: 2px 2px 4px rgba(61, 105, 16, 0.5);
 }
-th{/*заголовки в таблицах*/
-    color: rgb(216, 198, 198);
-    font-size: 100%;
-    font-family: Arial, Verdana, sans-serif;
+.blo1,
+.blo2 {
+	margin-top: 5px;	
 }
-td{/*текст в таблицах*/
-color: rgb(255, 255, 255);
-font-size: 100%;
-font-family: Arial, Verdana, sans-serif;
+
+.dd {
+	/*подпись с низу в странице о компании*/
+	font-style: italic;
 }
-h1,h2,h3,h4{ /*заголовки 1,2,3,4 типов*/
-    color: rgb(117, 18, 48);  
-  font-size: 200%;
-  font-family: Arial, Verdana, sans-serif;
+a {
+	/*ссылки на страницы*/
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 20px;
+	color: #666;
+	background: #f0f0f0;
+	padding: 5px;
+	text-decoration: none;
 }
-p {/*обычный текст*/
-   color: black;
-   font-family: Arial, Verdana, sans-serif;
+body {
+	background-color: burlywood;
+	margin: 0;
 }
-b{ /*стиль жирного начертания*/
-    color: rgb(90, 0, 0);
-    font-family: Arial, Verdana, sans-serif;
+table {
+	/*таблица общие настройки*/
+	background-color: burlywood;
+	border-radius: 10px/10px;
 }
-img{ /*рамка фоток*/
-    border: 3px dotted rgb(90, 0, 0);
+.education {
+	/*таблица образование*/
+	background-color: white;
+	border-collapse: collapse;
+	border-color: royalblue;
 }
-button{ /*кнопка подтвердить заказ соответственно*/
-    width: 200px;
-    height: 50px;
-    background-color: burlywood;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, sans-serif;
-    font-size:100%;
-    border-radius: 20px/20px;
-    border: 2px;
+.education th {
+	/*заголовки в таблице образование*/
+	color: rgb(255, 255, 255);
+	font-size: 100%;
+	font-family: Arial, Verdana, sans-serif;
+	background-color: red;
 }
-input{ /* поля с вводом текста*/
-    background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif; 
-    border-radius: 10px/10px
+.education td {
+	/*ячейки в таблице образование*/
+	color: royalblue;
+	font-size: 100%;
+	font-family: Arial, Verdana, sans-serif;
 }
-textarea{  /*поле предложений*/
-    background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif ;
-    border-radius: 10px/10px;
-    width: 300px;
-    height: 100px;
+.education td:hover,
+.education th:hover,
+#itog:hover {
+	/*ячейки в таблице образование исчезают при наведении*/
+	visibility: hidden;
 }
-select{ /*выбор округа*/
-    background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif; 
-    border-radius: 10px/10px
+#itog {
+	/*вывод в таблице образование*/
+	background-color: white;
+	color: black;
 }
-.or{ /*таблица заказа*/
-    border-radius: 10px/10px;
+.emploue td {
+	/*таблица сотрудники*/
+	color: white;
+	font-size: 100%;
+	font-family: Arial, Verdana, sans-serif;
 }
-.menu{
-    background-color:rgb(192, 192, 192);
-    border-color: rgb(90, 0, 0);
-    
+.or {
+	/*таблица заказа*/
+	border-radius: 10px/10px;
+	background-color: burlywood;
 }
-a[href^="https://"]/*индивидуальный цвет ссылки */
-{
-    color:  orangered;
+.or1 {
+	/*цвет в таблице заказа*/
+	background-color: burlywood;
+}
+h1,
+h2,
+h3,
+h4 {
+	/*заголовки 1,2,3,4 типов*/
+	color: rgb(117, 18, 48);
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 200%;
+}
+p,
+ol,
+ul {
+	/*обычный текст*/
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.zag,
+.zag2 {
+	font-size: 100%;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+}
+b {
+	/*стиль жирного начертания*/
+	color: black;
+	font-family: Arial, Verdana, sans-serif;
+}
+img {
+	/*рамка фоток*/
+	border: 3px dotted rgb(90, 0, 0);
+}
+button {
+	/*кнопка подтвердить заказ соответственно*/
+	width: 200px;
+	height: 50px;
+	background-color: white;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Arial, sans-serif;
+	font-size: 100%;
+	border-radius: 20px/20px;
+}
+input {
+	/* поля с вводом текста*/
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 10px/10px;
+}
+input:focus,
+textarea:focus {
+	background-color: #8fa09b;
+}
+
+textarea {
+	/*поле предложений*/
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 10px/10px;
+	width: 300px;
+	height: 100px;
+}
+select {
+	/*выбор округа*/
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 10px/10px;
+}
+a[href^="https://"] {
+	color: orangered;
+}
+a[href^="#"] {      /*кнопка наверх остается на месте*/
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+ol {
+	/*стиль маркера списка*/
+	list-style-type: lower-roman;
+}
+nav ul li {
+	/*иконки и анимация меню*/
+	transition: 0.3s;
+	list-style: url(img/images/favicon.ico);
+}
+nav ul li:hover {
+	text-decoration: none;
+	transform: translate(10px);
+	list-style: url(img/images/mark.jpg);
+}
+#gp {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fr {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prev {
+    margin: 0 15px 0 0;
+}
+
+.prev div {
+    position: relative;
+    width: 100px;
+    bottom: 9px;
+    left: 3px;
+    opacity: 0;
+    display: flex;
+    justify-content: center
+}
+
+.prev div p {
+    width: 101px;
+    background-color: rgba(201, 193, 193, 0.5);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -20px;
+    border-radius: 8%;
+}
+
+.prev:hover div {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.prev img {
+    border: 3px rgb(82, 41, 41) dotted;
+    border-radius: 8%;
 }
