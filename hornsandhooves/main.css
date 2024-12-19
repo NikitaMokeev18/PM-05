@@ -6,6 +6,8 @@
 	width: 280px;
 	padding: 0 10px;
 	float: left;
+	background: linear-gradient(to right top,#8fa09b, rgb(255, 255, 255));/*линейный градиент*/
+	border-radius: 20px/20px;
 }
 .fb {
 	/*стиль второго меню*/
@@ -13,25 +15,84 @@
 	justify-content: space-around;
 	align-items: stretch;
 	background: #8fa09b;
-	border: 1px solid black;
+	border-radius: 20px/20px;
 }
-footer {
+.vap ul {/*выпадающее вертикальное меню*/
+    list-style: none;
+    border: 1px rgb(125, 125, 125) solid;
+	background: linear-gradient(to right top,#8fa09b, rgb(255, 255, 255));
+    position: absolute;
+    width: 140px;
+    display: none;
+	margin-top: -10px;
+}
+
+.vap ul li {
+    position: relative;
+    right: 20px;
+}
+
+.vap:hover ul {
+    display: block;
+    transition-duration: 0.3s;
+	border-radius: 20px/20px;
+}
+
+.vap1 ul,
+.vap1 { /*выпадающее горизантальное меню*/
+    list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+.vap1{
+	margin-top: 0px;
+}
+.vap1 ul {
+	background: linear-gradient(to right top,#8fa09b, rgb(255, 255, 255));
+    position: absolute;
+    width: 110px;
+    display: none;
+}
+
+.vap1 li ul li {
+	align-items: stretch;
+}
+
+.vap1:hover ul {
+    display: block;
+    transition-duration: 0.3s;
+	border-radius: 20px/20px;
+}
+
+.vap1:hover {
+    transform: translateY(-3px);
+    transition-duration: 0.3s;
+}
+.ik{
+	list-style: none;
+}
+.ik:hover{
+	list-style: none;
+}
+footer {/*подвал*/
 	font-style: italic;
-	background: #8fa09b;
+	background: radial-gradient(circle, #8fa09b,black);/*радиальный градиент*/
 	color: #fff;
 	padding: 5px;
 	clear: left;
 }
-.as{
+.as{ 
 	width: 1000px;
 	margin: 0 auto;
 	background: #f0f0f0;
+	opacity: .8; /*прозрачность*/
 }
-header {
+header {/*заголовок*/
 	font-size: 2.2em;
 	text-align: center;
 	padding: 5px;
 	background: #8fa09b;
+	background-image: linear-gradient(to right top,#8fa09b, black);/*линейный градиент*/
 	color: #ffe;
 }
 main {
@@ -70,13 +131,13 @@ a {
 	/*ссылки на страницы*/
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 20px;
-	color: #666;
-	background: #f0f0f0;
+	color: #1b1a1a;
+	background: transparent;
 	padding: 5px;
 	text-decoration: none;
 }
-body {
-	background-color: burlywood;
+body { /*задний фон*/
+	background-image: url(img/bg4.jpg);
 	margin: 0;
 }
 table {
@@ -195,12 +256,20 @@ select {
 	border-radius: 10px/10px;
 }
 a[href^="https://"] {
-	color: orangered;
+	color: royalblue;
 }
-a[href^="#"] {      /*кнопка наверх остается на месте*/
+a[href^="#1"] {      /*кнопка наверх остается на месте*/
 	position: fixed;
+	color: black;
 	bottom: 10px;
 	right: 10px;
+	opacity: 0.5;
+	transition: 0.3s;
+	border: black solid 1px;
+	border-radius: 20px/20px;
+}
+a[href^="#1"]:hover{
+	opacity: initial;
 }
 ol {
 	/*стиль маркера списка*/
@@ -264,4 +333,39 @@ nav ul li:hover {
 .prev img {
     border: 3px rgb(82, 41, 41) dotted;
     border-radius: 8%;
+}
+@media screen and (max-width:1000px) { /*Адаптивность сайта и медиа запросы*/
+    .as {
+        max-width: 1000px;
+        width: 100%;
+    }
+    main {
+        max-width: 1000px;
+        margin-left: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .fb {
+        flex-wrap: wrap;
+    }
+    .fb a {
+        margin: 10px;
+    }
+    .fb a {
+        background-color: rgb(138, 138, 138);
+		border-radius: 10px/10px;
+    }
+    .fb ul li ul li a {
+        font-size: 18px;
+        flex-wrap: nowrap;
+        margin: 5px;
+        border: none;
+        background: none;
+    }
+}
+@media screen and (max-width:640px) {
+    .fb {
+        flex-direction: column;
+    }
 }
